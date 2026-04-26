@@ -1,4 +1,4 @@
-const repoName = "mysiteportfolio2";
+const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "mysiteportfolio2";
 const isGithubPages = process.env.GITHUB_PAGES === "true";
 
 /** @type {import('next').NextConfig} */
