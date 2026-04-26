@@ -39,6 +39,25 @@ npm run typecheck
 npm run build
 ```
 
+## Deploy with GitHub Actions
+
+The repository includes `.github/workflows/pages.yml`, which builds the static Next.js export and deploys `out/` to GitHub Pages.
+
+1. In GitHub, open **Settings → Pages**.
+2. Set **Build and deployment → Source** to **GitHub Actions**.
+3. Push or merge changes into `main`, or run **Deploy portfolio to GitHub Pages** manually from the **Actions** tab.
+
+The workflow runs:
+
+```bash
+npm ci
+npm run lint
+npm run typecheck
+GITHUB_PAGES=true npm run build
+```
+
+`GITHUB_PAGES=true` enables the repository base path in `next.config.mjs`, so the site works at `https://zagordenis1.github.io/mysiteportfolio2/`.
+
 ## Add a new project
 
 Project cards are localized in `src/i18n/dictionaries.ts`.
