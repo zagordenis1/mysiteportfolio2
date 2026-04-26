@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --canvas: 248 250 252;
+  --ink: 15 23 42;
+  --panel: 255 255 255;
+  --muted: 71 85 105;
+  --line: 203 213 225;
+}
+
+.dark {
+  color-scheme: dark;
+  --canvas: 2 6 23;
+  --ink: 241 245 249;
+  --panel: 15 23 42;
+  --muted: 148 163 184;
+  --line: 51 65 85;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgb(56 189 248 / 0.28);
+}
+
+@layer base {
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply px-5 sm:px-8 lg:px-10;
+  }
+
+  .glass {
+    @apply border border-white/40 bg-white/70 shadow-glass backdrop-blur-2xl dark:border-white/10 dark:bg-slate-950/55;
+  }
+
+  .section-kicker {
+    @apply inline-flex items-center gap-2 rounded-full border border-line/70 bg-panel/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-muted backdrop-blur-xl;
+  }
+
+  .text-gradient {
+    @apply bg-brand-gradient bg-clip-text text-transparent;
+  }
+}
