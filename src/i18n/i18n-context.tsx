@@ -28,8 +28,11 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const savedLocale = window.localStorage.getItem("portfolio-locale");
     if (isLocale(savedLocale)) {
-      setLocaleState(savedLocale);
+      const id = requestAnimationFrame(() => setLocaleState(savedLocale));
+      return () => cancelAnimationFrame(id);
     }
+
+    return undefined;
   }, []);
 
   const setLocale = useCallback((nextLocale: Locale) => {
