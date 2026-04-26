@@ -1,0 +1,10 @@
+{
+  "name": "Denys Zahorovskyi Portfolio",
+  "short_name": "Denys Portfolio",
+  "description": "Modern bilingual portfolio website for student software engineer Denys Zahorovskyi.",
+  "start_url": "/mysiteportfolio2/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#38bdf8",
+  "icons": []
+}
