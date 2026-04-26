@@ -47,6 +47,8 @@ The repository includes `.github/workflows/pages.yml`, which builds the static N
 2. Set **Build and deployment → Source** to **GitHub Actions**.
 3. Push or merge changes into `main`, or run **Deploy portfolio to GitHub Pages** manually from the **Actions** tab.
 
+If deployment fails with `Branch "main" is not allowed to deploy to github-pages due to environment protection rules`, open **Settings → Environments → github-pages** and update **Deployment branches and tags** to allow `main` or select **No restriction**.
+
 The workflow runs:
 
 ```bash
