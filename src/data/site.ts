@@ -23,6 +23,7 @@ export const projectAccents = [
 export const navItems = [
   { id: "about", key: "about" },
   { id: "skills", key: "skills" },
+  { id: "lab", key: "lab" },
   { id: "projects", key: "projects" },
   { id: "contacts", key: "contacts" }
 ] as const;

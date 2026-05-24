@@ -1,6 +1,7 @@
 "use client";
 
 import { AboutSection } from "@/components/about-section";
+import { CodeLabSection } from "@/components/code-lab-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
@@ -16,6 +17,7 @@ export function SiteShell() {
       <Hero />
       <AboutSection />
       <SkillsSection />
+      <CodeLabSection />
       <ProjectsSection />
       <ContactSection />
       <Footer />

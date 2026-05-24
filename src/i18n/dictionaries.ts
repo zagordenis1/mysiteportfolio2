@@ -17,6 +17,7 @@ export const dictionaries = {
     nav: {
       about: "Про мене",
       skills: "Навички",
+      lab: "Code Lab",
       projects: "Портфоліо",
       contacts: "Контакти"
     },
@@ -83,6 +84,43 @@ export const dictionaries = {
         }
       ]
     },
+
+    codeLab: {
+      kicker: "Інтерактив",
+      title: "Міні Code Lab прямо на сайті",
+      subtitle:
+        "Можна редагувати код, видаляти рядки, запускати JavaScript у безпечному браузерному sandbox і бачити результат у терміналі. Це додає портфоліо відчуття живого dev-продукту.",
+      features: [
+        { title: "Edit", text: "Змінюй код як у маленькому редакторі." },
+        { title: "Compile", text: "Запускай приклад і дивись output." },
+        { title: "Fix", text: "Натисни auto-fix, щоб виправити баг." }
+      ],
+      editorLabel: "Редактор коду",
+      run: "Compile / Run",
+      autoFix: "Auto-fix bug",
+      deleteLine: "Delete line",
+      reset: "Reset",
+      terminal: "Terminal output",
+      sandboxed: "sandboxed worker",
+      lines: "рядків",
+      chars: "символів",
+      compiling: "Compiling and running code...",
+      noOutput: "Code executed without console output.",
+      outputPlaceholder: "Натисни Compile / Run, щоб перевірити код.",
+      errorPrefix: "Error:",
+      unknownError: "Unknown error",
+      fixApplied: "Auto-fix applied: status 'done' → 'completed'. Run the code again.",
+      lineDeleted: "Current line deleted. You can run or reset the snippet.",
+      challengeTitle: "Міні-завдання",
+      challengeText:
+        "У прикладі навмисно є логічна помилка: фільтр шукає status 'done', хоча дані використовують 'completed'. Спробуй запустити, виправити вручну або натиснути Auto-fix bug.",
+      statuses: {
+        ready: "Ready",
+        running: "Running",
+        success: "Success",
+        error: "Error"
+      }
+    },
     projects: {
       kicker: "Портфоліо",
       title: "Обрані практичні проєкти",
@@ -136,6 +174,7 @@ export const dictionaries = {
     nav: {
       about: "About",
       skills: "Skills",
+      lab: "Code Lab",
       projects: "Portfolio",
       contacts: "Contacts"
     },
@@ -201,6 +240,43 @@ export const dictionaries = {
           items: ["Git", "GitHub", "Docker", "VS Code", "CI/CD"]
         }
       ]
+    },
+
+    codeLab: {
+      kicker: "Interactive",
+      title: "Mini Code Lab inside the portfolio",
+      subtitle:
+        "Visitors can edit code, delete lines, run JavaScript in a safe browser sandbox, and see the result in a terminal. It makes the portfolio feel like a real developer product.",
+      features: [
+        { title: "Edit", text: "Change code in a tiny editor." },
+        { title: "Compile", text: "Run the snippet and inspect output." },
+        { title: "Fix", text: "Press auto-fix to repair the bug." }
+      ],
+      editorLabel: "Code editor",
+      run: "Compile / Run",
+      autoFix: "Auto-fix bug",
+      deleteLine: "Delete line",
+      reset: "Reset",
+      terminal: "Terminal output",
+      sandboxed: "sandboxed worker",
+      lines: "lines",
+      chars: "chars",
+      compiling: "Compiling and running code...",
+      noOutput: "Code executed without console output.",
+      outputPlaceholder: "Press Compile / Run to test the code.",
+      errorPrefix: "Error:",
+      unknownError: "Unknown error",
+      fixApplied: "Auto-fix applied: status 'done' → 'completed'. Run the code again.",
+      lineDeleted: "Current line deleted. You can run or reset the snippet.",
+      challengeTitle: "Mini challenge",
+      challengeText:
+        "The example has an intentional logic bug: the filter checks status 'done', while the data uses 'completed'. Run it, fix it manually, or press Auto-fix bug.",
+      statuses: {
+        ready: "Ready",
+        running: "Running",
+        success: "Success",
+        error: "Error"
+      }
     },
     projects: {
       kicker: "Portfolio",
